@@ -1,0 +1,23 @@
+.navbar-brand img{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.navbar-collapse .btn{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.top-navbar svg {
+    margin: 0px 10px;
+}
+
+.top-navbar{
+    font-size: 10pt;
+    line-height: 0%;
+    background-color: #202030;
+}
+
+.top-nav-item {
+    color: white;
+}

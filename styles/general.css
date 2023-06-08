@@ -2,12 +2,24 @@ body {
   overflow-y: auto;
   scrollbar-gutter: auto;
   z-index: 20;
+  background-color: var(--snow-white);
+}
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: var(--yellow-green);
+}
+
+::selection {
+  color: white;
+  background: var(--yellow-green);
 }
 
 * {
   --scrollbar-color: #00000040;
   --raisin-black: #202030;
   --snow-white: #FFFAFA;
+  --yellow-green: #95c623;
 }
 
 *::-webkit-scrollbar {
@@ -37,7 +49,8 @@ body {
 
 
 .navbar-custom {
-  background: linear-gradient(var(--snow-white) 60%, #fffafa7c) !important;
+  /* background: linear-gradient(var(--snow-white) 60%, #fffafa7c) !important; */
+  background-color: var(--snow-white);
 }
 
 .navbar-brand img{

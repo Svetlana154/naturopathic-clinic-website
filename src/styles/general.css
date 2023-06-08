@@ -1,0 +1,67 @@
+body {
+  overflow-y: auto;
+  scrollbar-gutter: auto;
+  z-index: 20;
+}
+
+* {
+  --scrollbar-color: #00000040;
+  --raisin-black: #202030;
+  --snow-white: #FFFAFA;
+}
+
+*::-webkit-scrollbar {
+  background-color: transparent;
+  width: 5px;
+  z-index: 99999;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-track-piece {
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-button {
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-color);
+  border: 5px solid transparent;
+  border-radius: 24px;
+}
+
+
+
+.navbar-custom {
+  background: linear-gradient(var(--snow-white) 60%, #fffafa7c) !important;
+}
+
+.navbar-brand img{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar-collapse .btn{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.top-navbar svg {
+  margin: 0px 10px;
+}
+
+.top-navbar{
+  font-size: 10pt;
+  line-height: 0%;
+  background-color: var(--raisin-black);
+}
+
+.top-nav-item {
+  color: white;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}

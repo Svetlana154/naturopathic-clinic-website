@@ -1,0 +1,47 @@
+.title-section {
+  background-image: url('../images/Header.jpg');
+  background-size: cover;
+  background-position: center;
+  position: right 35% bottom 20%;;
+  height: 100vh;
+}
+
+.title-section-description {
+	left: 10%;
+	position: absolute;
+	top: 40%;
+	text-align: left;
+}
+
+.title-section-description h1 {
+	color: #202030;
+}
+
+.title-section-description p {
+	color: #fff;
+	font-size: 1.3rem;
+	line-height: 1.5;
+  width: 40vw;
+}
+
+.info-section{
+  margin: 20px auto;
+  width: 100%;
+  background-color: aqua;
+}
+
+.info-section-col {
+  background-color:blue;
+  height: fit-content;
+}
+
+.info-section-item{
+  width: 100%;
+  height: 150px;
+  padding: 5px;
+}
+
+#info-section-item-img-1 {
+  background-image: url("./images/Leaves.jpg");
+  background-size: cover;
+}

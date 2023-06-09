@@ -13,10 +13,13 @@
 	text-align: left;
 }
 
+.h1 {
+  font-size: 34pt;
+}
+
 .title-section-description h1 {
 	color: #202030;
   width: 45vw;
-  font-size: 34pt;
 }
 
 .title-section-description p {
@@ -32,7 +35,7 @@
 }
 
 .info-section{
-  margin: 20px auto;
+  margin: 50px auto;
   width: 70%;
 }
 
@@ -71,7 +74,7 @@
 
 
 .team-summary-section {
-  margin: 40px auto;
+  margin: 50px auto;
   width: 100%;
 	color: #5e5e55;
 }
@@ -146,10 +149,9 @@
 
 .break-section {
   height: 10vh;
-  background-image: url("../images/Ferns.jpg");
+  background: linear-gradient(0.25turn, #2c361f9a, #5662469a, #2c361f9a), url("../images/Ferns.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  /*background-attachment: fixed;*/
   background-position: center;
 }
 
@@ -165,7 +167,91 @@
 
 
 .statistics-section {
-  background-color: #202030;
+  background: linear-gradient(to bottom, #2c361f9a, #2020309a, #202030e3), url("../images/Ferns.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   color: white;
+  height: fit-content;
+}
+
+.statistics-section-row {
+  width: 70%;
+  margin: 0px auto;
+}
+
+.statistics-entry {
+  margin: 25% auto;
+}
+
+.statistics-entry-number {
+  font-weight: bolder;
+  font-size: 42pt;
+}
+
+.statistics-entry-description {
+  font-style: italic;
+  font-size: 12pt;
+}
+
+
+
+
+
+.services-section {
+  height: 800px;
+  background-color: #566246;
+  color: white;
+}
+
+.services-section h1{
+  padding: 30px 10px;
+}
+
+.services-section-row {
+  margin: 10px 40px;
+  width: 80%;
+}
+
+.services-section-entry {
   height: 500px;
+}
+
+
+.services-section-entry-icon {
+  top: -20px; 
+}
+
+.services-section-entry-text {
+  margin-top: 85%;
+  background-color: #202030be;
+  padding: 2px;
+}
+
+.services-section-entry-title {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.services-section-entry-description {
+  font-size: 11pt;
+}
+
+.services-section-entry-price {
+  font-size: 32pt;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.services-section-entry-cto {
+  width: fit-content;
+}
+
+#service-homeopathy {
+  background: url("../images/Homeopathy.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }

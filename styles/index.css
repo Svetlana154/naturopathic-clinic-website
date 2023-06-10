@@ -202,10 +202,12 @@
   height: fit-content;
   background-color: #566246;
   color: white;
+  padding-bottom: 50px;
 }
 
 .services-section h1{
-  padding: 30px 10px;
+  padding: 50px 10px;
+  padding-top: 150px;
 }
 
 .services-section-row {
@@ -252,7 +254,7 @@
 .triangle {
   width: 150px;
   height: 150px;
-  background: linear-gradient(to top right, #ffffff00 0%, #ffffff00 50%, green 50%, green 100%);
+  background: linear-gradient(to top right, #ffffff00 0%, #ffffff00 50%, #95c623 50%, #95c623 100%);
   margin: 0px;
   margin-left: auto;
 }
@@ -267,4 +269,87 @@
   background: url("../images/Homeopathy.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+#service-acupuncture {
+  background: url("../images/Incense.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#service-natural-medicine {
+  background: url("../images/NaturalMedicineCropped.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+#service-consulting {
+  background: url("../images/Passionfruit.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+
+
+.location-section {
+  height: fit-content;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: linear-gradient(#202030a6, #202030a6), url("../images/Trees.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+}
+
+.google-map {
+  margin: 100px;
+}
+
+.location-section-text {
+  height: inherit;
+  margin-right: 50px;
+  background-color: #202030;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-details{
+  margin-bottom: 100px;
+}
+
+.working-hours {
+  color: white;
+}
+
+
+
+.contact-us-section {
+  height: fit-content;
+  width: 80%;
+  margin-top: 100px;
+  margin-bottom: 150px;
+}
+
+.contact-us-line-break {
+  margin-bottom: 100px;
+}
+
+.sumbit-response {
+  width: fit-content;
+  margin: 10px;
+}
+
+#reponse-sent-message {
+  color: #95c623;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.contact-us-icon svg{
+  margin: 10px;
 }

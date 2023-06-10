@@ -1,3 +1,5 @@
+/* TITLE SECTION */
+
 .title-section {
   background-image: url('../images/Header.jpg');
   background-size: cover;
@@ -33,6 +35,11 @@
 .title-section-cto {
   margin-top: 2%;
 }
+
+
+
+
+/* INFO SECTION */
 
 .info-section{
   margin: 50px auto;
@@ -72,6 +79,9 @@
 }
 
 
+
+
+/* TEAM SUMMARY SECTION */
 
 .team-summary-section {
   margin: 50px auto;
@@ -147,6 +157,8 @@
   margin: 0px auto;
 }
 
+
+
 .break-section {
   height: 10vh;
   background: linear-gradient(0.25turn, #2c361f9a, #5662469a, #2c361f9a), url("../images/Ferns.jpg");
@@ -154,6 +166,10 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+
+
+/* QUOTE SECTION */
 
 .quote-section {
   font-size: 28pt;
@@ -165,6 +181,9 @@
   font-style: normal;
 }
 
+
+
+/* STATISTICS SECTION */
 
 .statistics-section {
   background: linear-gradient(to bottom, #2c361f9a, #2020309a, #202030e3), url("../images/Ferns.jpg");
@@ -196,7 +215,7 @@
 
 
 
-
+/* SERVICES SECTION */
 
 .services-section {
   height: fit-content;
@@ -294,9 +313,12 @@
 
 
 
+
+/* LOCATION SECTION */
+
 .location-section {
   height: fit-content;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 50px;
   background: linear-gradient(#202030a6, #202030a6), url("../images/Trees.jpg");
   background-size: cover;
@@ -328,6 +350,9 @@
 
 
 
+
+/* CONTACT US SECTION */
+
 .contact-us-section {
   height: fit-content;
   width: 80%;
@@ -355,6 +380,8 @@
 }
 
 
+
+/* FOOTER SECTION */
 
 .footer-section {
   height: fit-content;

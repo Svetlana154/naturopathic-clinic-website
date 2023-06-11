@@ -46,9 +46,10 @@
 }
 
 .calendar-view {
-    font-size: 62.5%;
-    width: 150px;
+    width: 150px !important;
     height: auto;
+    margin-right: 20%;
+
 }
 
 .time-slot {

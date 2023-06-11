@@ -34,7 +34,7 @@
       <!-- Navbar Main -->
       <nav class="navbar navbar-custom navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#title-section">
+          <a class="navbar-brand" href="index.html#title-section">
               <img src="images/HerbLogo3.png" width="40" height="40" alt=""/>
               <span>Naturality</span>
           </a>
@@ -47,7 +47,7 @@
                     <a class="nav-link" href="index.html#title-section">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
+                    <a class="nav-link" href="aboutus.html">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.html#services-section">Services</a>
@@ -76,7 +76,7 @@
           Visit us at the naturopathic clinic, Naturality, today and let our professionals take care of the rest.
           Your dream lifestyle is just one appointment away.
         </p>
-        <button type="button" class="btn btn-outline-success title-section-cto" type="submit">Book an Appointment</button>
+        <button type="button" class="btn btn-outline-success title-section-cto" id="btnBook2">Book an Appointment</button>
       </div>
       </div>
 
@@ -242,7 +242,7 @@
           </div>
         </div>
         <div class="row text-center">
-          <a href="#" class="link-primary">Learn more</a>
+          <a href="aboutus.html" class="link-primary">Learn more</a>
         </div>
       </div>
     </div>
@@ -344,7 +344,7 @@
             </div>
           </div>
           <div class="row services-section-entry-cto text-center">
-            <button class="btn btn-outline-light">
+            <button class="btn btn-outline-light" id="btnBookHomeopathy">
               Book this service
             </button>
           </div>
@@ -355,7 +355,7 @@
               <div class="card border-0 services-section-entry" id="service-acupuncture">
                 <div class="row services-section-entry-price triangle">
                   <span class="text-end">
-                    $79
+                    $89
                     <sup>99</sup>
                   </span>
                 </div>
@@ -383,7 +383,7 @@
             </div>
           </div>
           <div class="row services-section-entry-cto text-center">
-            <button class="btn btn-outline-light">
+            <button class="btn btn-outline-light" id="btnBookAcupuncture">
               Book this service
             </button>
           </div>
@@ -394,7 +394,7 @@
               <div class="card border-0 services-section-entry" id="service-natural-medicine">
                 <div class="row services-section-entry-price triangle">
                   <span class="text-end">
-                    $79
+                    $69
                     <sup>99</sup>
                   </span>
                 </div>
@@ -423,7 +423,7 @@
             </div>
           </div>
           <div class="row services-section-entry-cto text-center">
-            <button class="btn btn-outline-light">
+            <button class="btn btn-outline-light" id="btnBookNaturalMedicine">
               Book this service
             </button>
           </div>
@@ -434,7 +434,7 @@
               <div class="card border-0 services-section-entry" id="service-consulting">
                 <div class="row services-section-entry-price triangle">
                   <span class="text-end">
-                    $79
+                    $59
                     <sup>99</sup>
                   </span>
                 </div>
@@ -463,7 +463,7 @@
             </div>
           </div>
           <div class="row services-section-entry-cto text-center">
-            <button class="btn btn-outline-light">
+            <button class="btn btn-outline-light" id="btnBookConsulting">
               Book this service
             </button>
           </div>
@@ -516,9 +516,23 @@
                 </div>
               </div>
             </div>
+            <div class="row">
+              <div class="container bus-service-note">
+                <i>Available bus services nearby: 6, 7, 11, 14, 114</i>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Alert section -->
+    <div class="container">
+      <div class="alert alert-info" role="alert">
+        <b>IMPORTANT!</b> This clinic works on a by-appointment basis. Walk-ins will not be accepted.
+        Please book an appointment through <a href="booking.html">here</a> or contact us and we can guide you through the process.
+      </div>
+
     </div>
 
 
@@ -553,7 +567,7 @@
             <div class="row">
               <div class="container-fluid text-center">
                 <span class="align-middle" id="reponse-sent-message"> Message successfully sent! </span>
-                <button class="btn btn-outline-success sumbit-response float-end" type="submit">
+                <button class="btn btn-outline-success sumbit-response float-end" id="btnSubmitResponse">
                   Send
                 </button>
               </div>
@@ -630,18 +644,48 @@
         new bootstrap.Tooltip(t)
       });
 
-      
-
       document.getElementById("btnBook").addEventListener("click", () => {
+        sessionStorage.clear();
           window.location.href = "booking.html";
         });
+
+      document.getElementById("btnBook2").addEventListener("click", () => {
+        sessionStorage.clear();
+          window.location.href = "booking.html";
+        });
+
+      document.getElementById("btnSubmitResponse").addEventListener("click", () => {
+        document.getElementById("reponse-sent-message").style.visibility="visible";
+        document.getElementById("client-response").value = "";
+        const myTimeout = setTimeout(hideMessage, 5000);
+      });
+
+      document.getElementById("reponse-sent-message").style.visibility="hidden";
+
+      function hideMessage() {
+        document.getElementById("reponse-sent-message").style.visibility="hidden";
+      }
+
       
-      // const bookingLinks = document.querySelectorAll('.btnBookAppt');
-      // tooltips.forEach(btn => {
-      //   btn.addEventListener("click", () => {
-      //       location.href = "booking.html";
-      //   });
-      // })
+      document.getElementById("btnBookHomeopathy").addEventListener("click", () => {
+        sessionStorage.setItem("services","Homeopathy");
+        window.location.href = "booking.html";
+      });
+      
+      document.getElementById("btnBookAcupuncture").addEventListener("click", () => {
+        sessionStorage.setItem("services","Acupuncture");
+        window.location.href = "booking.html";
+      });
+      
+      document.getElementById("btnBookNaturalMedicine").addEventListener("click", () => {
+        sessionStorage.setItem("services","Natural Medicine");
+        window.location.href = "booking.html";
+      });
+      
+      document.getElementById("btnBookConsulting").addEventListener("click", () => {
+        sessionStorage.setItem("services","Consulting");
+        window.location.href = "booking.html";
+      });
 
     </script>
   </body>

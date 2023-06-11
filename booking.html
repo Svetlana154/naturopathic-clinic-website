@@ -7,9 +7,6 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script scr="./scripts/booking.js" type="text/javascript"></script>
-    <script scr="./scripts/general.js" type="text/javascript"></script>
-    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>
     <link rel="stylesheet" href="./styles/booking.css">
@@ -51,19 +48,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#title-section">Home</a>
+                    <a class="nav-link" href="index.html#title-section">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#services-section">Services</a>
+                    <a class="nav-link" href="index.html#services-section">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#location-section">Location</a>
+                    <a class="nav-link" href="index.html#location-section">Location</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact-us-section">Contact Us</a>
+                    <a class="nav-link" href="index.html#contact-us-section">Contact Us</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
@@ -86,9 +83,11 @@
                     <nav aria-label="...">
                         <ul class="pagination pagination-lg">
                         <li class="page-item active" aria-current="page">
-                            <span class="page-link">1</span>
+                            <span class="page-link">Step 1</span>
                         </li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item" aria-current="page">
+                            <span class="page-link" href="#">Step 2</span>
+                        </li>
                         </ul>
                     </nav>
                 </div>
@@ -106,12 +105,12 @@
                     <div class="col-4 appointment-form-personal-col">
                         <div class="row appointment-form-row">
                             <div class="col form-floating form-entry">
-                                <input type="text" class="form-control" id="floatingInputFirstName" placeholder="First Name">
-                                <label class="floating-label" for="floatingInputFirstName">First Name</label>
+                                <input type="text" class="form-control input-field" id="inputFirstName" placeholder="First Name">
+                                <label class="floating-label" for="inputFirstName">First Name</label>
                             </div>
                             <div class="col form-floating form-entry">
-                                <input type="text" class="form-control" id="floatingInputLastName" placeholder="Last Name">
-                                <label class="floating-label" for="floatingInputLastName">Last Name</label>
+                                <input type="text" class="form-control input-field" id="inputLastName" placeholder="Last Name">
+                                <label class="floating-label" for="inputLastName">Last Name</label>
                             </div>
                         </div>
                         <form class="row appointment-form-row">
@@ -119,7 +118,7 @@
                                 <div class="container-fluid dob-section">
                                     <label for="inputDOB">Date of Birth</label>
                                     <div class="input-group date datepicker">
-                                        <input type="text" class="form-control" id="inputDOB">
+                                        <input type="text" class="form-control input-field" id="inputDOB">
                                         <span class="input-group-append">
                                             <span class="input-group-text bg-white border-0 bg-transparent">
                                                 <i class="fa fa-calendar fa-lg"></i>
@@ -135,19 +134,19 @@
                             <div class="row">
                                 <div class="row appointment-form-row">
                                     <div class="col form-floating form-entry">
-                                        <input type="text" class="form-control" id="floatingInputFirstName" placeholder="(xxx) xxx-xxxx">
-                                        <label class="floating-label" for="floatingInputPhoneNumber">Phone Number</label>
+                                        <input type="text" class="form-control input-field" id="inputPhoneNumber" placeholder="(xxx) xxx-xxxx">
+                                        <label class="floating-label" for="inputPhoneNumber">Phone Number</label>
                                     </div>
                                     <div class="col-8 form-floating form-entry">
-                                        <input type="text" class="form-control" id="floatingInputLastName" placeholder="sample_email@naturality.com">
-                                        <label class="floating-label" for="floatingInputEmail">Email</label>
+                                        <input type="text" class="form-control input-field" id="inputEmail" placeholder="sample_email@naturality.com">
+                                        <label class="floating-label" for="inputEmail">Email</label>
                                     </div>
                                 </div>
                             </div>
                         <div class="row appointment-form-row">
                             <div class="form-check checkbox-input">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckNewPatient">
-                                <label class="form-check-label" for="flexCheckNewPatient">
+                                <input class="form-check-input input-field" type="checkbox" value="" id="checkboxNewPatient">
+                                <label class="form-check-label" for="checkboxNewPatient">
                                 I am a new patient
                                 </label>
                             </div>
@@ -165,7 +164,7 @@
                 </span>
                 <div class="row">
                     <div class="col-4">
-                        <button class="btn btn-outline-success container service-preview">
+                        <button class="btn btn-outline-success container service-preview" id="entrySelectedHomeopathy">
                             <div class="row">
                                 <div class="col-3 service-preview-part">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
@@ -177,7 +176,7 @@
                                 </div>
                             </div>
                         </button>
-                        <button class="btn btn-outline-success container service-preview service-preview-selected">
+                        <button class="btn btn-outline-success container service-preview" id="entrySelectedAcupuncture">
                             <div class="row">
                                 <div class="col-3 service-preview-part">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-brightness-alt-high" viewBox="0 0 16 16">
@@ -191,7 +190,7 @@
                         </button>
                     </div>
                     <div class="col-4">
-                        <button class="btn btn-outline-success container service-preview">
+                        <button class="btn btn-outline-success container service-preview" id="entrySelectedNaturalMedicine">
                             <div class="row">
                                 <div class="col-3 service-preview-part">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-flower3" viewBox="0 0 16 16">
@@ -203,7 +202,7 @@
                                 </div>
                             </div>
                         </button>
-                        <button class="btn btn-outline-success container service-preview">
+                        <button class="btn btn-outline-success container service-preview" id="entrySelectedConsulting">
                             <div class="row">
                                 <div class="col-3 service-preview-part">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
@@ -229,15 +228,15 @@
                 <div class="row">
                     <div class="col-6">
                         <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              Pick a practitioner
+                            <button class="btn btn-secondary dropdown-toggle input-field" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Any Practitioner
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                              <a class="dropdown-item" href="#">Any</a>
-                              <a class="dropdown-item" href="#">Jurica Williams</a>
-                              <a class="dropdown-item" href="#">Edward Smith</a>
-                              <a class="dropdown-item" href="#">Kaitlyn Tove</a>
-                              <a class="dropdown-item" href="#">John Doe</a>
+                              <span class="dropdown-item">Any Practitioner</span>
+                              <span class="dropdown-item">Jurica Williams</span>
+                              <span class="dropdown-item">Edward Smith</span>
+                              <span class="dropdown-item">Kaitlyn Tove</span>
+                              <span class="dropdown-item">John Doe</span>
                             </div>
                         </div>
                     </div>
@@ -257,51 +256,54 @@
                     </div>
                     <div class="col">
                         <span class="row instructions"> Available time slots:</span>
-                        <div class="row container-fluid all-times">
+                        <div class="row container-fluid all-times btn-group" role="group" aria-label="all-time-slots">
                             <div class="row">
                                 <div class="col-3">
-                                    <button class="btn btn-outline-success time-slot">
-                                        <span>11:00 AM</span>
-                                    </button>
+                                    <input type="radio" class="btn-check time-slot-input" name="btn-radio" id="time-slot-11:00AM" autocomplete="off">
+                                    <label class="btn btn-outline-success time-slot" for="time-slot-11:00AM">11:00 AM</label>
                                 </div>
                                 <div class="col-3">
-                                    <button class="btn btn-outline-success time-slot">
-                                        <span>11:00 AM</span>
-                                    </button>
+                                    <input type="radio" class="btn-check time-slot-input" name="btn-radio" id="time-slot-12:00PM" autocomplete="off">
+                                    <label class="btn btn-outline-success time-slot" for="time-slot-12:00PM">12:00 PM</label>
                                 </div>
                                 <div class="col-3">
-                                    <button class="btn btn-outline-success time-slot">
-                                        <span>11:00 AM</span>
-                                    </button>
+                                    <input type="radio" class="btn-check time-slot-input" name="btn-radio" id="time-slot-13:00PM" autocomplete="off">
+                                    <label class="btn btn-outline-success time-slot" for="time-slot-13:00PM">13:00 PM</label>
                                 </div>
                                 <div class="col-3">
-                                    <button class="btn btn-outline-success time-slot">
-                                        <span>11:00 AM</span>
-                                    </button>
+                                    <input type="radio" class="btn-check time-slot-input" name="btn-radio" id="time-slot-14:00PM" autocomplete="off">
+                                    <label class="btn btn-outline-success time-slot" for="time-slot-14:00PM">14:00 PM</label>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-3">
-                                    <button class="btn btn-outline-success time-slot">
-                                        <span>11:00 AM</span>
-                                    </button>
+                                    <input type="radio" class="btn-check time-slot-input" name="btn-radio" id="time-slot-15:00PM" autocomplete="off">
+                                    <label class="btn btn-outline-success time-slot" for="time-slot-15:00PM">15:00 PM</label>
                                 </div>
                                 <div class="col-3">
-                                    <button class="btn btn-outline-success time-slot">
-                                        <span>11:00 AM</span>
-                                    </button>
+                                    <input type="radio" class="btn-check time-slot-input" name="btn-radio" id="time-slot-16:00PM" autocomplete="off">
+                                    <label class="btn btn-outline-success time-slot" for="time-slot-16:00PM">16:00 PM</label>
                                 </div>
                                 <div class="col-3">
-                                    <button class="btn btn-outline-success time-slot">
-                                        <span>11:00 AM</span>
-                                    </button>
+                                    <input type="radio" class="btn-check time-slot-input" name="btn-radio" id="time-slot-17:00PM" autocomplete="off">
+                                    <label class="btn btn-outline-success time-slot" for="time-slot-17:00PM">17:00 PM</label>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-                
+        </div>
+
+        <div class="row container">
+            <div class="action-row d-flex justify-content-between">
+                <div>
+                    <button class="btn btn-outline-danger" id="btnCancel"> &lt Cancel</button>
+                </div>
+                <div>
+                    <button class="btn btn-outline-success" id="btnNext">Next &gt</button>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -334,7 +336,7 @@
             <div class="col-2 footer-main-section-col">
               <div class="container footer-link-list text-right">
                 <div class="row footer-link-item">
-                  <a href="#title-section" class="nav-link">
+                  <a href="index.html#title-section" class="nav-link">
                     <h3>Home</h3>
                   </a>
                 </div>
@@ -344,17 +346,17 @@
                   </a>
                 </div>
                 <div class="row footer-link-item">
-                  <a href="#services-section" class="nav-link">
+                  <a href="index.html#services-section" class="nav-link">
                     <h3>Services</h3>
                   </a>
                 </div>
                 <div class="row footer-link-item">
-                  <a href="#location-section" class="nav-link">
+                  <a href="index.html#location-section" class="nav-link">
                     <h3>Location</h3>
                   </a>
                 </div>
                 <div class="row footer-link-item">
-                  <a href="#contact-us-section" class="nav-link">
+                  <a href="index.html#contact-us-section" class="nav-link">
                     <h3>Contact Us</h3>
                   </a>
                 </div>
@@ -369,7 +371,7 @@
         </div>
       </div>
   
-
+      
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js" integrity="sha512-LsnSViqQyaXpD4mBBdRYeP6sRwJiJveh2ZIbW41EBrNmKxgr/LFZIiWT6yr+nycvhvauz8c2nYMhrP80YhG7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
       <script>
@@ -383,7 +385,131 @@
             minDate: 0
         });
 
-        $('.dropdown-toggle').dropdown();
+        document.getElementById("btnNext").addEventListener("click", () => {
+            saveData();
+            location.href = "booking2.html";
+        });
+
+        document.getElementById("btnCancel").addEventListener("click", () => {
+            sessionStorage.clear();
+            location.href = "index.html";
+        });
+
+        var allServicesSelected = [];
+
+        document.querySelectorAll('.service-preview').forEach(button => button.addEventListener('click', e => {
+            if(!button.classList.contains('active')) {
+                button.classList.add('active');
+                allServicesSelected.push(button.innerText);
+            } else {
+                button.classList.remove('active');
+                const index = allServicesSelected.indexOf(button.innerText);
+                if (index > -1) {
+                    allServicesSelected.splice(index, 1); // remove service from list
+                }
+            }
+            e.preventDefault();
+        }));
+
+        document.querySelectorAll('.dropdown-item').forEach(item => item.addEventListener('click', e => {
+            document.getElementById("dropdownMenuButton").innerText = item.innerText;
+            e.preventDefault();
+        }));
+
+
+
+        // logic
+        function saveData() {
+            console.log("saving data");
+
+            let newPatientChecked;
+            if (document.getElementById("checkboxNewPatient").checked){
+                newPatientChecked = "yes";
+            }
+            else {
+                newPatientChecked = "no";
+            }
+
+            let timeSelected;
+
+            document.querySelectorAll('.time-slot-input').forEach(item => {
+                if (item.checked){
+                    timeSelected = item.nextElementSibling.innerText;
+                }
+            });
+
+            var personData = {
+                firstName: document.getElementById("inputFirstName").value,
+                lastName: document.getElementById("inputLastName").value,
+                dob: document.getElementById("inputDOB").value,
+                phoneNumber: document.getElementById("inputPhoneNumber").value,
+                email: document.getElementById("inputEmail").value,
+                newPatient: newPatientChecked
+            }
+
+
+            var appointmentData = {
+                services: allServicesSelected,
+                practitioners: document.getElementById("dropdownMenuButton").innerText,
+                date: $("#calendar").datepicker( 'getDate' ),
+                time: timeSelected
+            }
+
+            sessionStorage.setItem("firstName", document.getElementById("inputFirstName").value);
+            sessionStorage.setItem("lastName", document.getElementById("inputLastName").value);
+            sessionStorage.setItem("dob", document.getElementById("inputDOB").value);
+            sessionStorage.setItem("phoneNumber", document.getElementById("inputPhoneNumber").value);
+            sessionStorage.setItem("email", document.getElementById("inputEmail").value);
+            sessionStorage.setItem("newPatient", newPatientChecked);
+            sessionStorage.setItem("services", allServicesSelected);
+            sessionStorage.setItem("practitioner", document.getElementById("dropdownMenuButton").innerText);
+            sessionStorage.setItem("date", $("#calendar").datepicker( 'getDate' ).toISOString());
+            sessionStorage.setItem("time", timeSelected);
+        }
+
+        function loadIn_Presets() {
+            document.getElementById("inputFirstName").value = sessionStorage.getItem("firstName");
+            document.getElementById("inputLastName").value = sessionStorage.getItem("lastName");
+            document.getElementById("inputDOB").value = sessionStorage.getItem("dob");
+            document.getElementById("inputPhoneNumber").value = sessionStorage.getItem("phoneNumber");
+            document.getElementById("inputEmail").value = sessionStorage.getItem("email");
+
+            if (sessionStorage.getItem("newPatient") === "Yes"){
+                document.getElementById("checkboxNewPatient").checked = true;
+            }
+            else {
+                document.getElementById("checkboxNewPatient").checked = false;
+            }
+
+
+            var services = sessionStorage.getItem("services")
+            if (services) {
+                services.split(",").forEach(service => {
+                    if (service === "Natural Medicine"){
+                        document.getElementById("entrySelectedNaturalMedicine").classList.add("active");
+                    }
+                    else {
+                        document.getElementById("entrySelected"+service).classList.add("active");
+                    }
+                });
+            };
+            
+            var practitioner = sessionStorage.getItem("practitioner");
+            if (practitioner) {
+                document.getElementById("dropdownMenuButton").innerText = practitioner;
+            }
+
+            document.getElementById("calendar").value = new Date(sessionStorage.getItem("date"));
+
+            var time = sessionStorage.getItem("dateAndTime");
+            if (time){
+                console.log(time);
+                document.getElementById("time-slot-"+time.substring(time.indexOf(" "), 1)).checked = true;
+            }
+
+        }
+        loadIn_Presets();
+
       </script>
     </body>
   </html>

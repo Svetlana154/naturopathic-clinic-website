@@ -17,6 +17,7 @@
 
 .appointment-form-row {
     margin-top: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -53,4 +54,43 @@
 .time-slot {
     padding: 5px;
     margin: 5px;
+    border-radius: 7px !important;
+}
+
+.action-row {
+    margin: 20px 0px;
+}
+
+
+.section-break {
+    height: 50px;
+}
+
+#printer-icon {
+    color:#555581;
+    margin-bottom: 20px;
+}
+
+#printer-icon:hover {
+    color:#202030;
+}
+
+#thankyou-icon {
+    color: #95c623;
+}
+
+.reference-number {
+    margin: 20px 5px;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.appointment-details-preview {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: fit-content;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border-left: 2px solid #566246;
+    border-right: 2px solid #566246;
 }

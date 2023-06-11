@@ -259,6 +259,7 @@
 
 .services-section-entry-description {
   font-size: 11pt;
+  height: fit-content;
 }
 
 .services-section-entry-price span{

@@ -12,6 +12,12 @@ body {
   print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */
 }
 
+a { color: inherit; }
+
+.link {
+  text-decoration: none;
+}
+
 /* SCROLLBAR */
 
 ::-moz-selection { /* Code for Firefox */

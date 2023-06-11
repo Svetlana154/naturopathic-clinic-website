@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Naturality</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script scr="./scripts/booking.js" type="text/javascript"></script>
+    <script scr="./scripts/general.js" type="text/javascript"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>
+    <link rel="stylesheet" href="./styles/booking.css">
+    <link rel="stylesheet" href="./styles/general.css">
+
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="container-fluid fixed-top g-0">
+
+      <!-- Navbar Strip -->
+      <div class="top-navbar container-fluid g-0">
+        <ul class="top-navbar ms-auto list-group list-group-horizontal">
+          <li class="top-nav-item list-group-item border-0 bg-transparent">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+              </svg>
+              <span>customer_services@naturality.com</span>
+          </li>
+          <li class="top-nav-item list-group-item border-0 bg-transparent">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg>
+              <span>+1 (343) 243-1034</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Navbar Main -->
+      <nav class="navbar navbar-custom navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#title-section">
+              <img src="images/HerbLogo3.png" width="40" height="40" alt=""/>
+              <span>Naturality</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#title-section">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services-section">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#location-section">Location</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact-us-section">Contact Us</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Book an Appointment</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    
+    </div>
+
+    <!-- Booking section -->
+    <div class="container booking-section">
+        <div class="row booking-section-title">
+            <div class="col">
+                <h1>Book an Appointment</h1>
+            </div>
+            <div class="col">
+                <div class="container-fluid d-flex justify-content-end">
+                    <nav aria-label="...">
+                        <ul class="pagination pagination-lg">
+                        <li class="page-item active" aria-current="page">
+                            <span class="page-link">1</span>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="row form container appointment-form">
+            <div class="row form container appointment-form-row">
+                <span class="row">
+                    <h3>Personal Information</h3>
+                </span>
+                <span class="row instructions">
+                    Please enter some of your details to get started with the booking process
+                </span>
+                <div class="row">
+                    <div class="col-4 appointment-form-personal-col">
+                        <div class="row appointment-form-row">
+                            <div class="col form-floating form-entry">
+                                <input type="text" class="form-control" id="floatingInputFirstName" placeholder="First Name">
+                                <label class="floating-label" for="floatingInputFirstName">First Name</label>
+                            </div>
+                            <div class="col form-floating form-entry">
+                                <input type="text" class="form-control" id="floatingInputLastName" placeholder="Last Name">
+                                <label class="floating-label" for="floatingInputLastName">Last Name</label>
+                            </div>
+                        </div>
+                        <form class="row appointment-form-row">
+                            <div class="col">
+                                <div class="container-fluid dob-section">
+                                    <label for="inputDOB">Date of Birth</label>
+                                    <div class="input-group date datepicker">
+                                        <input type="text" class="form-control" id="inputDOB">
+                                        <span class="input-group-append">
+                                            <span class="input-group-text bg-white border-0 bg-transparent">
+                                                <i class="fa fa-calendar fa-lg"></i>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-8">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="row appointment-form-row">
+                                    <div class="col form-floating form-entry">
+                                        <input type="text" class="form-control" id="floatingInputFirstName" placeholder="(xxx) xxx-xxxx">
+                                        <label class="floating-label" for="floatingInputPhoneNumber">Phone Number</label>
+                                    </div>
+                                    <div class="col-8 form-floating form-entry">
+                                        <input type="text" class="form-control" id="floatingInputLastName" placeholder="sample_email@naturality.com">
+                                        <label class="floating-label" for="floatingInputEmail">Email</label>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="row appointment-form-row">
+                            <div class="form-check checkbox-input">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckNewPatient">
+                                <label class="form-check-label" for="flexCheckNewPatient">
+                                I am a new patient
+                                </label>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row form container appointment-form-row">
+                <span class="row">
+                    <h3>Services</h3>
+                </span>
+                <span class="row instructions">
+                    Please select one or more services that you would like to receive during this appointment
+                </span>
+                <div class="row">
+                    <div class="col-4">
+                        <button class="btn btn-outline-success container service-preview">
+                            <div class="row">
+                                <div class="col-3 service-preview-part">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-capsule" viewBox="0 0 16 16">
+                                        <path d="M1.828 8.9 8.9 1.827a4 4 0 1 1 5.657 5.657l-7.07 7.071A4 4 0 1 1 1.827 8.9Zm9.128.771 2.893-2.893a3 3 0 1 0-4.243-4.242L6.713 5.429l4.243 4.242Z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-9 g-0 service-preview-part">
+                                    <span>Homeopathy</span>
+                                </div>
+                            </div>
+                        </button>
+                        <button class="btn btn-outline-success container service-preview service-preview-selected">
+                            <div class="row">
+                                <div class="col-3 service-preview-part">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-brightness-alt-high" viewBox="0 0 16 16">
+                                        <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm8 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zm-13.5.5a.5.5 0 0 0 0-1h-2a.5.5 0 0 0 0 1h2zm11.157-6.157a.5.5 0 0 1 0 .707l-1.414 1.414a.5.5 0 1 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm-9.9 2.121a.5.5 0 0 0 .707-.707L3.05 5.343a.5.5 0 1 0-.707.707l1.414 1.414zM8 7a4 4 0 0 0-4 4 .5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5 4 4 0 0 0-4-4zm0 1a3 3 0 0 1 2.959 2.5H5.04A3 3 0 0 1 8 8z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-9 g-0 service-preview-part">
+                                    <span>Acupuncture</span>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="col-4">
+                        <button class="btn btn-outline-success container service-preview">
+                            <div class="row">
+                                <div class="col-3 service-preview-part">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-flower3" viewBox="0 0 16 16">
+                                        <path d="M11.424 8c.437-.052.811-.136 1.04-.268a2 2 0 0 0-2-3.464c-.229.132-.489.414-.752.767C9.886 4.63 10 4.264 10 4a2 2 0 1 0-4 0c0 .264.114.63.288 1.035-.263-.353-.523-.635-.752-.767a2 2 0 0 0-2 3.464c.229.132.603.216 1.04.268-.437.052-.811.136-1.04.268a2 2 0 1 0 2 3.464c.229-.132.489-.414.752-.767C6.114 11.37 6 11.736 6 12a2 2 0 1 0 4 0c0-.264-.114-.63-.288-1.035.263.353.523.635.752.767a2 2 0 1 0 2-3.464c-.229-.132-.603-.216-1.04-.268zM9 4a1.468 1.468 0 0 1-.045.205c-.039.132-.1.295-.183.484a12.88 12.88 0 0 1-.637 1.223L8 6.142a21.73 21.73 0 0 1-.135-.23 12.88 12.88 0 0 1-.637-1.223 4.216 4.216 0 0 1-.183-.484A1.473 1.473 0 0 1 7 4a1 1 0 1 1 2 0zM3.67 5.5a1 1 0 0 1 1.366-.366 1.472 1.472 0 0 1 .156.142c.094.1.204.233.326.4.245.333.502.747.742 1.163l.13.232a21.86 21.86 0 0 1-.265.002 12.88 12.88 0 0 1-1.379-.06 4.214 4.214 0 0 1-.51-.083 1.47 1.47 0 0 1-.2-.064A1 1 0 0 1 3.67 5.5zm1.366 5.366a1 1 0 0 1-1-1.732c.001 0 .016-.008.047-.02.037-.013.087-.028.153-.044.134-.032.305-.06.51-.083a12.88 12.88 0 0 1 1.379-.06c.09 0 .178 0 .266.002a21.82 21.82 0 0 1-.131.232c-.24.416-.497.83-.742 1.163a4.1 4.1 0 0 1-.327.4 1.483 1.483 0 0 1-.155.142zM9 12a1 1 0 0 1-2 0 1.476 1.476 0 0 1 .045-.206c.039-.131.1-.294.183-.483.166-.378.396-.808.637-1.223L8 9.858l.135.23c.241.415.47.845.637 1.223.083.19.144.352.183.484A1.338 1.338 0 0 1 9 12zm3.33-6.5a1 1 0 0 1-.366 1.366 1.478 1.478 0 0 1-.2.064c-.134.032-.305.06-.51.083-.412.045-.898.061-1.379.06-.09 0-.178 0-.266-.002l.131-.232c.24-.416.497-.83.742-1.163a4.1 4.1 0 0 1 .327-.4c.046-.05.085-.086.114-.11.026-.022.04-.03.041-.032a1 1 0 0 1 1.366.366zm-1.366 5.366a1.494 1.494 0 0 1-.155-.141 4.225 4.225 0 0 1-.327-.4A12.88 12.88 0 0 1 9.74 9.16a22 22 0 0 1-.13-.232l.265-.002c.48-.001.967.015 1.379.06.205.023.376.051.51.083.066.016.116.031.153.044l.048.02a1 1 0 1 1-1 1.732zM8 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+                                      </svg>
+                                </div>
+                                <div class="col-9 g-0 service-preview-part">
+                                    <span>Natural Medicine</span>
+                                </div>
+                            </div>
+                        </button>
+                        <button class="btn btn-outline-success container service-preview">
+                            <div class="row">
+                                <div class="col-3 service-preview-part">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-person-bounding-box" viewBox="0 0 16 16">
+                                        <path d="M1.5 1a.5.5 0 0 0-.5.5v3a.5.5 0 0 1-1 0v-3A1.5 1.5 0 0 1 1.5 0h3a.5.5 0 0 1 0 1h-3zM11 .5a.5.5 0 0 1 .5-.5h3A1.5 1.5 0 0 1 16 1.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 1-.5-.5zM.5 11a.5.5 0 0 1 .5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 1 0 1h-3A1.5 1.5 0 0 1 0 14.5v-3a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v3a1.5 1.5 0 0 1-1.5 1.5h-3a.5.5 0 0 1 0-1h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 1 .5-.5z"/>
+                                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm8-9a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                    </svg>
+                                </div>
+                                <div class="col-9 g-0 service-preview-part">
+                                    <span>Consulting</span>
+                                </div>
+                            </div>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row form container appointment-form-row">
+                <span class="row">
+                    <h3>Practitioners</h3>
+                </span>
+                <span class="row instructions">
+                    Please select a practitioner for this appointment
+                </span>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Pick a practitioner
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Any</a>
+                              <a class="dropdown-item" href="#">Jurica Williams</a>
+                              <a class="dropdown-item" href="#">Edward Smith</a>
+                              <a class="dropdown-item" href="#">Kaitlyn Tove</a>
+                              <a class="dropdown-item" href="#">John Doe</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row form container appointment-form-row">
+                <span class="row">
+                    <h3>Date & Time</h3>
+                </span>
+                <span class="row instructions">
+                    Please select a date and time for this appointment
+                </span>
+                <div class="row">
+                    <div class="col">
+                        <div class="datepicker-calendar calendar-view" id="calendar"></div>
+                    </div>
+                    <div class="col">
+                        <span class="row instructions"> Available time slots:</span>
+                        <div class="row container-fluid all-times">
+                            <div class="row">
+                                <div class="col-3">
+                                    <button class="btn btn-outline-success time-slot">
+                                        <span>11:00 AM</span>
+                                    </button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-outline-success time-slot">
+                                        <span>11:00 AM</span>
+                                    </button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-outline-success time-slot">
+                                        <span>11:00 AM</span>
+                                    </button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-outline-success time-slot">
+                                        <span>11:00 AM</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <button class="btn btn-outline-success time-slot">
+                                        <span>11:00 AM</span>
+                                    </button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-outline-success time-slot">
+                                        <span>11:00 AM</span>
+                                    </button>
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-outline-success time-slot">
+                                        <span>11:00 AM</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </div>
+
+
+
+    
+
+    <!-- Footer -->
+    <div class="container-fluid footer-section">
+        <div class="row">
+          <div class="container footer-main-section">
+            <div class="col-10 footer-main-section-col">
+              <img src="images/HerbLogo3.png" class="footer-logo-img" width="60" height="60" alt=""/>
+              <h1>Naturality</h1>
+              <span>
+                Explore nature's healing touch
+              </span>
+              <div class="container-fluid footer-social-media-list">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-facebook footer-social-media-item" viewBox="0 0 16 16">
+                  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-instagram footer-social-media-item" viewBox="0 0 16 16">
+                  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi bi-twitter footer-social-media-item" viewBox="0 0 16 16">
+                  <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="col-2 footer-main-section-col">
+              <div class="container footer-link-list text-right">
+                <div class="row footer-link-item">
+                  <a href="#title-section" class="nav-link">
+                    <h3>Home</h3>
+                  </a>
+                </div>
+                <div class="row footer-link-item">
+                  <a href="#" class="nav-link">
+                    <h3>About Us</h3>
+                  </a>
+                </div>
+                <div class="row footer-link-item">
+                  <a href="#services-section" class="nav-link">
+                    <h3>Services</h3>
+                  </a>
+                </div>
+                <div class="row footer-link-item">
+                  <a href="#location-section" class="nav-link">
+                    <h3>Location</h3>
+                  </a>
+                </div>
+                <div class="row footer-link-item">
+                  <a href="#contact-us-section" class="nav-link">
+                    <h3>Contact Us</h3>
+                  </a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row container-fluid footer-copyright-row">
+          <span class="text-center">
+            &copy Naturality 2023. All rights reserved. [Completed for SEG 3125]
+          </span>
+        </div>
+      </div>
+  
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js" integrity="sha512-LsnSViqQyaXpD4mBBdRYeP6sRwJiJveh2ZIbW41EBrNmKxgr/LFZIiWT6yr+nycvhvauz8c2nYMhrP80YhG7Cw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>  
+      <script>
+        $('.datepicker').datepicker({
+            format: 'mm/dd/yyyy',
+            maxDate: 0
+        });
+
+        $('.datepicker-calendar').datepicker({
+            format: 'mm/dd/yyyy',
+            minDate: 0
+        });
+
+        $('.dropdown-toggle').dropdown();
+      </script>
+    </body>
+  </html>

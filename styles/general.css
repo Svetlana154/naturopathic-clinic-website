@@ -5,6 +5,10 @@ body {
   background-color: var(--snow-white);
 }
 
+
+
+/* SCROLLBAR */
+
 ::-moz-selection { /* Code for Firefox */
   color: white;
   background: var(--yellow-green);
@@ -48,6 +52,8 @@ body {
 
 
 
+/* NAVBAR SECTION */
+
 .navbar-custom {
   /* background: linear-gradient(var(--snow-white) 60%, #fffafa7c) !important; */
   background-color: var(--snow-white);
@@ -77,4 +83,54 @@ body {
   color: white;
   padding-top: 3px;
   padding-bottom: 3px;
+}
+
+
+
+
+/* FOOTER SECTION */
+
+.footer-section {
+  height: fit-content;
+  color: black;
+}
+
+.footer-main-section {
+  display: flex;
+  padding: 100px 150px;
+  background-color: #202030;
+  color: white;
+}
+
+.footer-main-section-col {
+  float: left;
+}
+
+.footer-social-media-list {
+  margin-top: 30px;
+}
+
+.footer-social-media-item {
+  margin: 10px;
+}
+
+.footer-link-list {
+  margin-top: 30px;
+}
+
+.footer-link-item {
+  width: fit-content;
+}
+
+.footer-link-item h3 {
+  font-weight: 100;
+}
+
+.footer-logo-img {
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.footer-copyright-row {
+  background-color: #FFFAFA;
 }

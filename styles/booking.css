@@ -1,0 +1,56 @@
+/* BOOKING SECTION */
+.booking-section {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.booking-section h1{
+    margin-bottom: 50px;
+}
+
+.appointment-form {
+    height: fit-content;
+    border: 2px solid #202030;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.appointment-form-row {
+    margin-top: 20px;
+}
+
+
+.instructions {
+    margin: 20px 5px;
+    font-style: italic;
+}
+
+.appointment-form-personal-col .row {
+    margin-bottom: 20px;
+}
+
+
+.floating-label {
+    margin-left: 10px;
+}
+
+.checkbox-input {
+    margin: 10px;
+}
+
+.service-preview {
+    width: 220px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.calendar-view {
+    font-size: 62.5%;
+    width: 150px;
+    height: auto;
+}
+
+.time-slot {
+    padding: 5px;
+    margin: 5px;
+}

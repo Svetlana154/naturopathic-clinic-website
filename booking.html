@@ -404,15 +404,12 @@
             location.href = "index.html";
         });
 
-        var allServicesSelected = [];
 
         document.querySelectorAll('.service-preview').forEach(button => button.addEventListener('click', e => {
             if(!button.classList.contains('active')) {
                 button.classList.add('active');
-                allServicesSelected.push(button.innerText);
             } else {
                 button.classList.remove('active');
-                const index = allServicesSelected.indexOf(button.innerText);
                 if (index > -1) {
                     allServicesSelected.splice(index, 1); // remove service from list
                 }
@@ -447,22 +444,13 @@
                 }
             });
 
-            var personData = {
-                firstName: document.getElementById("inputFirstName").value,
-                lastName: document.getElementById("inputLastName").value,
-                dob: document.getElementById("inputDOB").value,
-                phoneNumber: document.getElementById("inputPhoneNumber").value,
-                email: document.getElementById("inputEmail").value,
-                newPatient: newPatientChecked
-            }
+            var allServicesSelected = [];
 
-
-            var appointmentData = {
-                services: allServicesSelected,
-                practitioners: document.getElementById("dropdownMenuButton").innerText,
-                date: $("#calendar").datepicker( 'getDate' ),
-                time: timeSelected
-            }
+            document.querySelectorAll('.service-preview').forEach(button => {
+                if (button.classList.contains('active')){
+                    allServicesSelected.push(button.innerText);
+                }
+            });
 
             sessionStorage.setItem("firstName", document.getElementById("inputFirstName").value);
             sessionStorage.setItem("lastName", document.getElementById("inputLastName").value);
@@ -491,7 +479,8 @@
             }
 
 
-            var services = sessionStorage.getItem("services")
+            var services = sessionStorage.getItem("services");
+            console.log(services);
             if (services) {
                 services.split(",").forEach(service => {
                     if (service === "Natural Medicine"){

@@ -81,8 +81,8 @@
 }
 
 .reference-number {
-    margin: 20px 5px;
     margin-top: 10px;
+    margin-bottom: 10px;
     font-style: italic;
 }
 

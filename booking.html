@@ -426,8 +426,6 @@
 
         // logic
         function saveData() {
-            console.log("saving data");
-
             let newPatientChecked;
             if (document.getElementById("checkboxNewPatient").checked){
                 newPatientChecked = "yes";
@@ -480,7 +478,6 @@
 
 
             var services = sessionStorage.getItem("services");
-            console.log(services);
             if (services) {
                 services.split(",").forEach(service => {
                     if (service === "Natural Medicine"){

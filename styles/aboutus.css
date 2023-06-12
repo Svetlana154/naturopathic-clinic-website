@@ -2,9 +2,9 @@
 .aboutus-section {
     padding-top: 150px;
     padding-bottom: 100px;
-    background: linear-gradient(#202030ef, #20203057), url("../images/LeafVeins.jpg");
+    background: linear-gradient(#202030cc, #20203011), url("../images/SeveredLeaf.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
     color: white;
     margin-top: 50px;
     margin-bottom: 50px;

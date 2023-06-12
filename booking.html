@@ -508,13 +508,19 @@
                 document.getElementById("dropdownMenuButton").innerText = practitioner;
             }
 
-            document.getElementById("calendar").value = new Date(sessionStorage.getItem("date"));
-
-            var time = sessionStorage.getItem("dateAndTime");
-            if (time){
-                console.log(time);
-                document.getElementById("time-slot-"+time.substring(time.indexOf(" "), 1)).checked = true;
+            var date = sessionStorage.getItem("date");
+            if (date){
+                $('#calendar').datepicker('setDate', new Date (date.split("T")[0]));
             }
+            else {
+                $('#calendar').datepicker('setDate', new Date());
+            }
+
+            var time = sessionStorage.getItem("time");
+            if (time){
+                document.getElementById("time-slot-"+time.split(" ")[0]+time.split(" ")[1]).checked = true;
+            }
+
 
         }
         loadIn_Presets();
